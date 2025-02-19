@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #c6adad;
+    margin: 0;
+}
+
+h1{
+    font-family: "Irish Grover", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 8rem;
+}
+
+/* Calculator container */
+.calculator {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Display input */
+#display {
+    width: 68%;
+    height: 50px;
+    font-size: 1.8rem;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+    margin-bottom: 15px;
+    pointer-events: none;
+}
+
+/* Button grid */
+.calculator div {
+    display: flex;
+    justify-content: center;
+}
+
+/* Buttons */
+.button {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background: #444;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background: #666;
+}
+
+/* Operator buttons */
+.button:nth-child(4),
+.button:nth-child(8),
+.button:nth-child(12),
+.button:nth-child(15),
+.button:nth-child(16) {
+    background: orange;
+}
+
+.button:nth-child(4):hover,
+.button:nth-child(8):hover,
+.button:nth-child(12):hover,
+.button:nth-child(15):hover,
+.button:nth-child(16):hover {
+    background: darkorange;
+}
+
+/* Clear and Equal buttons */
+#clear {
+    background: red;
+    color: white;
+    width: 73%;
+}
+
+#clear:hover {
+    background: darkred;
+}
+
+.button:last-child {
+    background: green;
+}
+
+.button:last-child:hover {
+    background: darkgreen;
+}
+
+/* Footer */
+p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
